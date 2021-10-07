@@ -1,0 +1,92 @@
+/* FONTS */
+
+@import url("fonts/Marker-Felt.ttf");
+@import url("fonts/Nunito.ttf");
+
+/* COLORS */
+
+:root {
+    --body-color: #F1EDE8
+}
+
+/* GENERAL */
+
+body {
+    background-color: var(--body-color);
+}
+
+/* DIVISEUR */
+
+.divider {
+    height: 56px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid rgba(0, 0, 0, 0.15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5rem 1.5rem rgb(0 0 0 /10%), inset 0 0.125rem 0.5rem rgb(0 0 0 /15%);
+    display: block;
+}
+
+/* NAVBAR */
+
+.miaou-brand {
+    font-family: 'Marker Felt', sans-serif;
+}
+
+/* ACCUEIL */
+
+.miaou-home {
+    position: relative;
+    width: 100%;
+    height: 576px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    background-color: black;
+}
+
+.miaou-home::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(transparent,rgba(0,0,0,0.6));
+}
+
+.welcome-text {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    bottom: 4rem;
+    color: white;
+    padding: 0 1rem;
+    font-family: Nunito, sans-serif;
+    z-index: 5;
+}
+
+.welcome-title {
+    font-size: 31px;
+}
+
+.welcome-subtitle {
+    font-size: 21px;
+}
+
+@media (min-width: 992px) {
+    .welcome-text {
+        bottom: 12rem;
+    }
+}
+
+@media (min-width: 1534px) {
+    .welcome-text {
+        top: 7rem;
+    }
+}
+
+.mentions {
+    margin-top: 13rem;
+}
